@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff4b2b;
+            text-shadow: 2px 2px 5px rgba(255, 75, 43, 0.5);
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        input {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ff4b2b;
+            background-color: #333;
+            color: #fff;
+        }
+
+        button {
+            margin-top: 13px;
+            padding: 11px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.3);
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #ff3c1a, #ff2958);
+            box-shadow: 0 5px 20px rgba(255, 75, 43, 0.5);
+            transform: translateY(-2px);
+        }
+
+        img {
+            margin-top: 2px;
+            max-width: 400px;
+            width: 67%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 75, 43, 0.3);
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #4a90e2 0%, #2d6cdb 100%);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #2d6cdb 0%, #4a90e2 100%);
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .download-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+
+        .btn-text {
+            letter-spacing: 0.5px;
+        }
+
+        .download-btn.loading {
+            opacity: 0.8;
+            cursor: progress;
+        }
+
+        .download-btn.loading .download-icon {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Text~2~Image Generator</h1>
+    <label for="input">Enter a prompt to generate image:</label>
+    <input type="text" id="input" placeholder="Describe your image...">
+    <button id="btn">Generate Image</button>
+    <img id="image" src="" alt="">
+   
+        
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
