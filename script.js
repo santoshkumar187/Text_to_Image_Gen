@@ -14,7 +14,7 @@ const button = document.getElementById("btn");
 async function query() {
     image.src="/loading.gif";
 	const response = await fetch(
-		age",
+		
 		{
 			headers: {
 				Authorization: `Bearer ${token}`,
