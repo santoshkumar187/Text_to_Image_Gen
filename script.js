@@ -1,5 +1,5 @@
 
-const token="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";
+const token="api key";
 const inputTxt = document.getElementById("input");
 const image = document.getElementById("image");
 const button = document.getElementById("btn");
@@ -14,7 +14,7 @@ const button = document.getElementById("btn");
 async function query() {
     image.src="/loading.gif";
 	const response = await fetch(
-		"https://router.huggingface.co/hf-inference/models/ZB-Tech/Text-to-Image",
+		age",
 		{
 			headers: {
 				Authorization: `Bearer ${token}`,
